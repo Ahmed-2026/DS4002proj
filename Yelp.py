@@ -38,7 +38,7 @@ sns.histplot(reviews["review_length"], bins=100, kde=False, color="purple")
 plt.title("Distribution of Review Lengths")
 plt.xlabel("Review Length (words)")
 plt.ylabel("Number of Reviews")
-plt.xlim(0, 500)  # focus on normal range, avoid extreme outliers
+plt.xlim(0, 500)
 plt.savefig("plot4_length_distribution.png", dpi=300)
 plt.show()
 
