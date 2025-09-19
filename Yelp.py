@@ -24,16 +24,7 @@ plt.ylabel("Avg. Review Length (words)")
 plt.savefig("plot2_avg_length.png", dpi=300)
 plt.show()
 
-# Plot 3: Non-empty text reviews
-non_empty_reviews = reviews[reviews["is_empty"] == False]
-sns.countplot(x="stars", data=non_empty_reviews, palette="crest")
-plt.title("Number of Reviews by Star Rating (Non-Empty Text Only)")
-plt.xlabel("Star Rating")
-plt.ylabel("Number of Reviews")
-plt.savefig("plot3_nonempty_reviews.png", dpi=300)
-plt.show()
-
-# Plot 4: Distribution of review lengths
+# Plot 3: Distribution of review lengths
 sns.histplot(reviews["review_length"], bins=100, kde=False, color="purple")
 plt.title("Distribution of Review Lengths")
 plt.xlabel("Review Length (words)")
