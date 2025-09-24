@@ -26,6 +26,7 @@ DS4002PROJ
   - `plot1_all_reviews.png`: Number of reviews per star rating
   - `plot2_avg_length.png`: Average review length by star rating
   - `plot4_length_distribution.png`: Distribution of review lengths
+  - `decision_tree_results.md`: Accuracy and precision by class from `3_classify.py`
 - 📁 Scripts Folder
   - `0_processing.py`: Initial processing script to generate exploratory plots
   - `1_sentiment.py`: Sentiment analysis script, taking in raw Yelp reviews and outputting the reviews with their associated sentiments
