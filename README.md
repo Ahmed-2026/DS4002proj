@@ -18,8 +18,10 @@ DS4002PROJ
 - `LICENSE`: Description of the license for this project
 - 📁 Data Folder: contains data used throughout the pipeline
   - `METADATA.md`: Description of the data being used
-  - `yelp_sample_250k.csv`: Sample of 250k reviews (for improved processing speeds)
-  - `yelp_with_sentiment.csv`: Reviews with analyzed sentiment labels/strengths, output from sentiment script
+  - `yelp_part1.feather`...`yelp_part4.feather`: Raw Yelp review dataset (full dataset split into 4 files, tracked with Git LFS)
+  - `yelp_sample_250k.csv`: Sample of 250k reviews (for improved processing speeds, used for quick testing and debugging)
+  - `yelp_with_sentiment.csv`: Reviews with analyzed sentiment labels/strengths, output from sentiment script (produced by running `1_sentiment.py` on the sample)
+  - Note: Running `1_sentiment.py` on the full dataset produces many intermediate files (`sentiment_chunk_*.feather`) which are merged into a larger sentiment dataset. These chunk files are not committed due to size, but the workflow is included.
 - 📁 Output Folder
   - [insert description of plots here]
 - 📁 Scripts Folder
